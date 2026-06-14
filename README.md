@@ -6,7 +6,7 @@ This portfolio showcases my projects, technical skills, certifications, achievem
 
 ## 🔗 Live Portfolio
 
-Coming Soon...
+https://portfolio-ashy-pi-29.vercel.app/
 
 ## 👩‍💻 About Me
 
