@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yukta Ravindra Thakur | Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #6366f1;
+    --secondary: #8b5cf6;
+    --accent: #10b981;
+    --dark: #0f172a;
+    --light: #f8fafc;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark);
+    color: var(--light);
+    scroll-behavior: smooth;
+}
+
+.gradient-text {
+    background: linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary),
+        var(--accent)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}   
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+        }
+
+        .progress-bar {
+            height: 4px;
+            background: linear-gradient(
+                90deg,
+                var(--primary),
+                var(--secondary)
+            );
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+        }
+
+        .skill-card {
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .project-card:hover {
+            transform: scale(1.03);
+        }
+
+        .project-card {
+            transition: 0.3s;
+        }
+
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid var(--primary);
+            animation:
+                typing 3s steps(30,end),
+                blink .7s infinite;
+        }
+
+        @keyframes typing {
+            from {width:0}
+            to {width:100%}
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- NAVBAR -->
+
+<nav class="fixed w-full glass-card py-4 px-6 z-50">
+
+    <div class="container mx-auto flex justify-between items-center">
+
+        <a href="#"
+           class="text-2xl font-bold gradient-text">
+            Yukta Ravindra Thakur
+        </a>
+
+        <div class="hidden md:flex space-x-8">
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#skills">Skills</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- HERO SECTION -->
+
+<section id="home"
+         class="min-h-screen flex items-center justify-center text-center px-6">
+
+    <div>
+
+        <h1 class="text-5xl md:text-7xl font-bold mb-4 typewriter">
+            I'm Yukta Ravindra Thakur
+        </h1>
+
+        <h2 class="text-2xl md:text-4xl gradient-text mb-8">
+            Transforming Ideas into Intelligent Digital Solutions
+        </h2>
+
+        <p class="text-lg max-w-3xl mx-auto text-gray-300">
+            Computer Engineering Student • AI Enthusiast • Web Developer •
+            Python Developer
+        </p>
+
+        <div class="mt-10">
+
+            <a href="#projects"
+               class="px-8 py-3 rounded-full bg-gradient-to-r
+               from-indigo-500 to-purple-600 font-semibold">
+                View Projects
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT SECTION -->
+
+<section id="about" class="py-20 px-6">
+
+    <div class="container mx-auto">
+
+        <h2 class="text-4xl font-bold text-center gradient-text mb-12">
+            About Me
+        </h2>
+
+        <div class="flex flex-col md:flex-row gap-10 items-center">
+
+            <div class="md:w-1/3">
+
+                <img src="yukta.jpg"
+                     alt="Yukta Thakur"
+                     class="rounded-full w-72 h-72 object-cover border-4 border-indigo-500">
+
+            </div>
+
+            <div class="md:w-2/3 glass-card p-8">
+
+                <p class="text-lg leading-8">
+
+                    I am Yukta Thakur, a Computer Engineering student passionate
+                    about Web Development, Artificial Intelligence, Python
+                    Programming and Software Development.
+
+                    I enjoy building real-world projects such as Resume Builders,
+                    College Discovery Platforms, Formula Sheet Applications,
+                    and AI-powered solutions.
+
+                    I am constantly learning new technologies and improving my
+                    problem-solving skills.
+
+                </p>
+
+                <div class="flex flex-wrap gap-3 mt-6">
+
+                    <span class="px-4 py-2 bg-indigo-900 rounded-full">
+                        Artificial Intelligence
+                    </span>
+
+                    <span class="px-4 py-2 bg-purple-900 rounded-full">
+                        Web Development
+                    </span>
+
+                    <span class="px-4 py-2 bg-green-900 rounded-full">
+                        Python Development
+                    </span>
+
+                    <span class="px-4 py-2 bg-pink-900 rounded-full">
+                        Prompt Engineering
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SKILLS SECTION -->
+
+<section id="skills" class="py-20 px-6 bg-gray-900">
+
+    <div class="container mx-auto">
+
+        <h2 class="text-4xl text-center font-bold gradient-text mb-12">
+            My Skills
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <div class="glass-card p-6 skill-card">
+
+                <h3 class="text-2xl font-bold mb-4">
+                    Python Development
+                </h3>
+
+                <ul class="space-y-2">
+                    <li>Python</li>
+                    <li>Tkinter</li>
+                    <li>API Integration</li>
+                    <li>Automation</li>
+                    <li>PDF Generation</li>
+                </ul>
+
+            </div>
+
+            <div class="glass-card p-6 skill-card">
+
+                <h3 class="text-2xl font-bold mb-4">
+                    AI & Prompt Engineering
+                </h3>
+
+                <ul class="space-y-2">
+                    <li>Gemini AI</li>
+                    <li>Prompt Engineering</li>
+                    <li>AI Content Generation</li>
+                    <li>Chatbots</li>
+                    <li>Automation</li>
+                </ul>
+
+            </div>
+
+            <div class="glass-card p-6 skill-card">
+
+                <h3 class="text-2xl font-bold mb-4">
+                    Web Development
+                </h3>
+
+                <ul class="space-y-2">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Next.js</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS SECTION -->
+
+<section id="projects" class="py-20 px-6">
+
+    <div class="container mx-auto">
+
+        <h2 class="text-4xl font-bold text-center gradient-text mb-12">
+            My Projects
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- AI App Generator -->
+
+            <div class="glass-card p-6 project-card">
+
+                <div class="text-4xl mb-4 text-green-400">
+                    <i class="fas fa-robot"></i>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-3">
+                    AI-App-Generator
+                </h3>
+
+                <p class="text-gray-300 mb-4">
+                    AI-powered content generation platform that helps users
+                    create text, ideas, and creative outputs efficiently.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mb-4">
+
+                    <span class="px-3 py-1 bg-green-900 rounded-full text-sm">
+                        AI
+                    </span>
+
+                    <span class="px-3 py-1 bg-green-900 rounded-full text-sm">
+                        Next.js
+                    </span>
+
+                    <span class="px-3 py-1 bg-green-900 rounded-full text-sm">
+                        Web App
+                    </span>
+
+                </div>
+
+                <a href="https://github.com/Yukta062006/AI-App-Generator"
+                   target="_blank"
+                   class="text-green-400 font-semibold">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+        
+
+            <!-- College Discovery Platform -->
+
+            <div class="glass-card p-6 project-card">
+
+                <div class="text-4xl mb-4 text-green-400">
+                    <i class="fas fa-university"></i>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-3">
+                    College Discovery Platform
+                </h3>
+
+                <p class="text-gray-300 mb-4">
+                    College discovery platform helping students
+                    search, compare and find colleges according
+                    to their academic goals.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mb-4">
+
+                    <span class="px-3 py-1 bg-green-900 rounded-full text-sm">
+                        Education
+                    </span>
+
+                    <span class="px-3 py-1 bg-green-900 rounded-full text-sm">
+                        Search Platform
+                    </span>
+
+                    <span class="px-3 py-1 bg-green-900 rounded-full text-sm">
+                        Next.js
+                    </span>
+
+                </div>
+
+                <a href="https://github.com/Yukta062006/CollegeDiscoveryPlatform"
+                   target="_blank"
+                   class="text-green-400 font-semibold">
+                    View on GitHub →
+                </a>
+
+            </div>
+
+            <!-- CropWise AI -->
+
+<div class="glass-card p-6 project-card">
+
+    <div class="text-4xl mb-4 text-green-400">
+        <i class="fas fa-seedling"></i>
+    </div>
+
+    <h3 class="text-2xl font-bold mb-3">
+        CropWise AI
+    </h3>
+
+    <p class="text-gray-300 mb-4">
+        AI-powered smart agriculture platform that helps farmers identify crop diseases,
+        receive crop recommendations, analyze soil conditions, and improve productivity
+        using Machine Learning and Artificial Intelligence.
+    </p>
+
+    <div class="flex flex-wrap gap-2 mb-4">
+
+        <span class="px-3 py-1 bg-green-900 rounded-full text-sm">
+            AI/ML
+        </span>
+
+        <span class="px-3 py-1 bg-green-900 rounded-full text-sm">
+            Agriculture
+        </span>
+
+        <span class="px-3 py-1 bg-green-900 rounded-full text-sm">
+            Python
+        </span>
+
+    </div>
+
+    <a href="https://github.com/Yukta062006/CropWise-AI-Copilot"
+       target="_blank"
+       class="text-green-400 font-semibold">
+        View on GitHub →
+    </a>
+
+</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EDUCATION / JOURNEY SECTION -->
+
+<section id="journey" class="py-20 px-6 bg-gray-900">
+
+    <div class="container mx-auto">
+
+        <h2 class="text-4xl font-bold text-center gradient-text mb-12">
+            My Journey
+        </h2>
+
+        <div class="glass-card p-8">
+
+            <div class="mb-8">
+
+                <h3 class="text-2xl font-bold">
+                    Bachelor of Engineering
+                </h3>
+
+                <p class="text-indigo-400">
+                    Computer Science & Engineering
+                </p>
+
+                <p class="text-gray-300">
+                    Third Year Student
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3 class="text-xl font-bold">
+                    Career Focus
+                </h3>
+
+                <p class="text-gray-300 mt-2">
+                    Passionate about Artificial Intelligence,
+                    Full Stack Development, Software Engineering,
+                    and creating innovative digital products
+                    that solve real-world problems.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+
+<section id="contact" class="py-20 px-6">
+
+    <div class="container mx-auto">
+
+        <h2 class="text-4xl font-bold text-center gradient-text mb-12">
+            Get In Touch
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-10">
+
+            <!-- Contact Info -->
+
+            <div class="glass-card p-8">
+
+                <h3 class="text-2xl font-bold mb-6">
+                    Contact Information
+                </h3>
+
+                <div class="space-y-6">
+
+                    <div class="flex items-center">
+
+                        <i class="fas fa-envelope text-indigo-400 text-2xl mr-4"></i>
+
+                        <div>
+                            <h4 class="font-semibold">Email</h4>
+
+                            <a href="mailto:yuktaravindrathakur2006@gmail.com"
+                               class="text-gray-300">
+                                yuktaravindrathakur2006@gmail.com
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-center">
+
+                        <i class="fas fa-phone text-purple-400 text-2xl mr-4"></i>
+
+                        <div>
+                            <h4 class="font-semibold">Phone</h4>
+
+                            <a href="tel:+917499557328"
+                               class="text-gray-300">
+                                +91 7499557328
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-center">
+
+                        <i class="fas fa-location-dot text-green-400 text-2xl mr-4"></i>
+
+                        <div>
+                            <h4 class="font-semibold">Location</h4>
+
+                            <p class="text-gray-300">
+                                Akot, Maharashtra
+                                <br>
+                                Currently in Amravati
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Social Media -->
+
+                <div class="mt-10">
+
+                    <h4 class="font-semibold mb-4">
+                        Connect With Me
+                    </h4>
+
+                    <div class="flex gap-4">
+
+                        <a href="https://www.linkedin.com/in/yukta-thakur-38251a328"
+                           target="_blank"
+                           class="w-12 h-12 rounded-full bg-indigo-900 flex items-center justify-center">
+
+                            <i class="fab fa-linkedin-in"></i>
+
+                        </a>
+
+                        <a href="https://github.com/Yukta062006"
+                           target="_blank"
+                           class="w-12 h-12 rounded-full bg-purple-900 flex items-center justify-center">
+
+                            <i class="fab fa-github"></i>
+
+                        </a>
+
+                        <a href="mailto:yuktaravindrathakur2006@gmail.com"
+                           class="w-12 h-12 rounded-full bg-green-900 flex items-center justify-center">
+
+                            <i class="fas fa-envelope"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Contact Form -->
+
+            <div class="glass-card p-8">
+
+                <h3 class="text-2xl font-bold mb-6">
+                    Send Me A Message
+                </h3>
+
+                <form id="contactForm">
+
+                    <div class="mb-4">
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Your Name"
+                            required
+                            class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700">
+
+                    </div>
+
+                    <div class="mb-4">
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Your Email"
+                            required
+                            class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700">
+
+                    </div>
+
+                    <div class="mb-4">
+
+                        <input
+                            type="text"
+                            id="subject"
+                            placeholder="Subject"
+                            required
+                            class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700">
+
+                    </div>
+
+                    <div class="mb-4">
+
+                        <textarea
+                            id="message"
+                            rows="5"
+                            placeholder="Your Message"
+                            required
+                            class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700"></textarea>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="w-full py-3 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- DOWNLOAD RESUME BUTTON -->
+
+<div class="fixed bottom-6 left-6 z-50">
+
+    <a href="YuktaResume.pdf"
+       download
+       class="inline-flex items-center px-5 py-3 rounded-full
+       bg-gradient-to-r from-green-500 to-teal-600 font-semibold shadow-lg">
+
+        <i class="fas fa-download mr-2"></i>
+
+        Download Resume
+
+    </a>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="bg-gray-900 py-10">
+
+    <div class="container mx-auto px-6 text-center">
+
+        <h3 class="text-3xl font-bold gradient-text mb-3">
+            Yukta Ravindra Thakur
+        </h3>
+
+        <p class="text-gray-400 mb-6">
+            Transforming Ideas into Intelligent Digital Solutions
+        </p>
+
+        <div class="flex justify-center gap-6 mb-6">
+
+            <a href="https://github.com/Yukta062006" target="_blank">
+                <i class="fab fa-github text-2xl"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/yukta-thakur-38251a328"
+               target="_blank">
+                <i class="fab fa-linkedin text-2xl"></i>
+            </a>
+
+            <a href="mailto:yuktaravindrathakur2006@gmail.com">
+                <i class="fas fa-envelope text-2xl"></i>
+            </a>
+
+        </div>
+
+        <p class="text-gray-500">
+            © 2026 Yukta Ravindra Thakur. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+window.addEventListener('scroll', () => {
+
+    const scrollTop =
+        document.documentElement.scrollTop;
+
+    const scrollHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+    const progress =
+        (scrollTop / scrollHeight) * 100;
+
+    document.getElementById('progressBar')
+        .style.width = progress + '%';
+
+});
+
+document.getElementById('contactForm')
+.addEventListener('submit', function(e){
+
+    e.preventDefault();
+
+    const name =
+        document.getElementById('name').value;
+
+    const email =
+        document.getElementById('email').value;
+
+    const subject =
+        document.getElementById('subject').value;
+
+    const message =
+        document.getElementById('message').value;
+
+    window.location.href =
+        `mailto:yuktaravindrathakur2006@gmail.com?subject=${subject}&body=Name: ${name}%0AEmail: ${email}%0A%0A${message}`;
+
+});
+
+document.querySelectorAll('a[href^="#"]')
+.forEach(anchor => {
+
+    anchor.addEventListener('click', function(e) {
+
+        e.preventDefault();
+
+        const target =
+            document.querySelector(
+                this.getAttribute('href')
+            );
+
+        if(target){
+
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
