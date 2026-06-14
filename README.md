@@ -27,7 +27,6 @@ I enjoy building innovative solutions that solve real-world problems and continu
 
 - HTML5
 - CSS3
-- JavaScript
 - Tailwind CSS
 - Font Awesome
 
